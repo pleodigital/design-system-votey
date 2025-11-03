@@ -16,6 +16,10 @@
       "pink-miami-color": {
         "value": "ff6ec7",
         "type": "color"
+      },
+      "xxx-color": {
+        "value": "abcdef",
+        "type": "color"
       }
     }
   }

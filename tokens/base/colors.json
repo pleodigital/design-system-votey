@@ -12,6 +12,10 @@
       "highlight": {
         "value": "#ffc107",
         "type": "color"
+      },
+      "pink-miami-color": {
+        "value": "ff6ec7",
+        "type": "color"
       }
     }
   }

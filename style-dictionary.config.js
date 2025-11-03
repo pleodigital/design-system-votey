@@ -28,11 +28,8 @@ StyleDictionary.registerFormat({
             // Dodaj inne typy tokenów (typografia, shadow itp.)
         });
 
-        return `/**
- * Ta paczka jest generowana automatycznie przez Style Dictionary.
- * NIE edytuj jej ręcznie.
- */
-module.exports = {
+        return `
+export default {
   theme: {
     extend: {
       colors: ${JSON.stringify(tokens.colors, null, 2)},

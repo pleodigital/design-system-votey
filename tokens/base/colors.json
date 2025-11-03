@@ -20,6 +20,10 @@
       "xxx-color": {
         "value": "abcdef",
         "type": "color"
+      },
+      "highlight-100": {
+        "value": "#ffc107",
+        "type": "color"
       }
     }
   }

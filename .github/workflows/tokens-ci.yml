@@ -1,0 +1,70 @@
+name: 🎨 Tokens CI & Preview Deploy
+
+on:
+  push:
+    # Uruchom na push do gałęzi feature (np. z Tokens Studio)
+    branches: ['feature/**']
+    paths:
+      - 'tokens/**/*.json' # Tylko jeśli zmieniony jest JSON tokenów
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - 'tokens/**/*.json' # Uruchom dla PR
+      - 'storybook/**'     # Uruchom też jeśli zmieniony jest kod Storybooka
+
+jobs:
+  build-tokens-and-storybook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout code
+        uses: actions/checkout@v4
+        with:
+          # Potrzebne do pushowania zmian przez akcję PR
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: ⚙️ Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 🔧 Install dependencies
+        run: npm install
+
+      # Krok A: Generowanie Tokenów
+      - name: 🎨 Build Design Tokens (Style Dictionary)
+        run: npm run build:tokens
+
+      # Krok B: Automatyczne dodanie i Commit/PR wygenerowanych plików (jeśli istnieją)
+      - name: 🔄 Commit i Utwórz PR (Wygenerowane pliki do głównej gałęzi)
+        id: create-pr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'chore(tokens): wygenerowano nowe tokeny po aktualizacji w Figmie'
+          title: ' chore(tokens): Aktualizacja tokenów z Figmy'
+          branch: auto-update/tokens-${{ github.sha }}
+          base: main # Docelowa gałąź
+          add-paths: dist/
+          labels: generated, tokens, chore
+          # Akcja tworzy/aktualizuje PR z gałęzi feature/XYZ,
+          # jeśli zaszły zmiany w dist/
+
+      # Krok C: Budowanie Storybooka
+      - name: 📚 Build Storybook
+        run: npm run build-storybook
+        # Upewnij się, że Storybook buduje się do domyślnego folderu 'storybook-static'
+
+      # Krok D: Wdrożenie Podglądu (Preview Deployment)
+      # Pokażemy tu użycie Vercel jako przykładu, ale Netlify działa podobnie.
+      # Wymaga dodania Secrets: VERCEL_TOKEN, VERCEL_ORG_ID, VERCEL_PROJECT_ID
+      - name: 🚀 Deploy Storybook Preview (Vercel)
+        # Uruchom tylko dla Pull Requestów (dla gałęzi feature)
+        if: github.event_name == 'pull_request'
+        uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          github-token: ${{ secrets.GITHUB_TOKEN }} # Do komentowania PR
+          working-directory: ./storybook-static
+          vercel-args: '--public'

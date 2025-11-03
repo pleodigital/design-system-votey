@@ -38,20 +38,20 @@ jobs:
       - name: 🎨 Build Design Tokens (Style Dictionary)
         run: npm run build:tokens
 
-      # Krok B: Automatyczne dodanie i Commit/PR wygenerowanych plików (jeśli istnieją)
-      - name: 🔄 Commit i Utwórz PR (Wygenerowane pliki do głównej gałęzi)
-        id: create-pr
-        uses: peter-evans/create-pull-request@v6
-        with:
-          token: ${{ secrets.GH_PAT_FOR_PR }}
-          commit-message: 'chore(tokens): wygenerowano nowe tokeny po aktualizacji w Figmie'
-          title: ' chore(tokens): Aktualizacja tokenów z Figmy'
-          branch: auto-update/tokens-${{ github.sha }}
-          base: main # Docelowa gałąź
-          add-paths: dist/
-          labels: generated, tokens, chore
-          # Akcja tworzy/aktualizuje PR z gałęzi feature/XYZ,
-          # jeśli zaszły zmiany w dist/
+#      # Krok B: Automatyczne dodanie i Commit/PR wygenerowanych plików (jeśli istnieją)
+#      - name: 🔄 Commit i Utwórz PR (Wygenerowane pliki do głównej gałęzi)
+#        id: create-pr
+#        uses: peter-evans/create-pull-request@v6
+#        with:
+#          token: ${{ secrets.GH_PAT_FOR_PR }}
+#          commit-message: 'chore(tokens): wygenerowano nowe tokeny po aktualizacji w Figmie'
+#          title: ' chore(tokens): Aktualizacja tokenów z Figmy'
+#          branch: auto-update/tokens-${{ github.sha }}
+#          base: main # Docelowa gałąź
+#          add-paths: dist/
+#          labels: generated, tokens, chore
+#          # Akcja tworzy/aktualizuje PR z gałęzi feature/XYZ,
+#          # jeśli zaszły zmiany w dist/
 
       # Krok C: Budowanie Storybooka
       - name: 📚 Build Storybook
@@ -70,5 +70,5 @@ jobs:
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           github-token: ${{ secrets.GITHUB_TOKEN }} # Do komentowania PR
-          working-directory: ./storybook-static
-          vercel-args: '--public'
+          working-directory: ./
+          vercel-args: '--public --prebuilt --local-dir storybook-static'

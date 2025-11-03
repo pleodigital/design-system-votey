@@ -24,6 +24,10 @@
       "highlight-100": {
         "value": "#ffc107",
         "type": "color"
+      },
+      "highlight-200": {
+        "value": "#ffc107",
+        "type": "color"
       }
     }
   }

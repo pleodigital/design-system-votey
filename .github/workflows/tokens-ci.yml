@@ -58,17 +58,29 @@ jobs:
         run: npm run build-storybook
         # Upewnij się, że Storybook buduje się do domyślnego folderu 'storybook-static'
 
+#      # Krok D: Wdrożenie Podglądu (Preview Deployment)
+#      # Pokażemy tu użycie Vercel jako przykładu, ale Netlify działa podobnie.
+#      # Wymaga dodania Secrets: VERCEL_TOKEN, VERCEL_ORG_ID, VERCEL_PROJECT_ID
+#      - name: 🚀 Deploy Storybook Preview (Vercel)
+#        # Uruchom tylko dla Pull Requestów (dla gałęzi feature)
+#        if: github.event_name == 'pull_request'
+#        uses: amondnet/vercel-action@v25
+#        with:
+#          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+#          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+#          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+#          github-token: ${{ secrets.GITHUB_TOKEN }} # Do komentowania PR
+#          working-directory: ./storybook-static
+#          vercel-args: '--public'
+
       # Krok D: Wdrożenie Podglądu (Preview Deployment)
-      # Pokażemy tu użycie Vercel jako przykładu, ale Netlify działa podobnie.
-      # Wymaga dodania Secrets: VERCEL_TOKEN, VERCEL_ORG_ID, VERCEL_PROJECT_ID
       - name: 🚀 Deploy Storybook Preview (Vercel)
-        # Uruchom tylko dla Pull Requestów (dla gałęzi feature)
         if: github.event_name == 'pull_request'
         uses: amondnet/vercel-action@v25
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          github-token: ${{ secrets.GITHUB_TOKEN }} # Do komentowania PR
-          working-directory: ./storybook-static
-          vercel-args: '--public'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          working-directory: ./
+          vercel-args: '' # Użyjemy domyślnego zachowania

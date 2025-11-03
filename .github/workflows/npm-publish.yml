@@ -1,0 +1,65 @@
+name: 📦 NPM Publish on Merge
+
+on:
+  push:
+    # Wyzwalaj TYLKO po zmergowaniu do gałęzi main
+    branches:
+      - main
+
+jobs:
+  publish:
+    # Uruchom tylko wtedy, gdy w commitach, które złożyły się na merge,
+    # pojawiła się fraza 'chore(tokens):' (zwykle używana w auto-PR) lub 'publish'
+    if: contains(github.event.head_commit.message, 'chore(tokens):') || contains(github.event.head_commit.message, 'publish')
+
+    runs-on: ubuntu-latest
+
+    # Uprawnienia dla bota GitHub, wymagane do interakcji z paczkami
+    permissions:
+      contents: write # Do robienia commita z nową wersją (jeśli będziesz wersjonować)
+      packages: write # Wymagane, jeśli używasz GitHub Packages
+      id-token: write # Wymagane dla OIDC/NPM Login (nowoczesna metoda)
+
+    steps:
+      - name: ⬇️ Checkout code
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          registry-url: 'https://registry.npmjs.org/'
+
+      - name: 🔧 Install dependencies
+        run: npm install
+
+      # 1. Buduj tokeny (upewnij się, że folder dist/ jest świeży)
+      # Ten krok jest opcjonalny, jeśli ufasz, że folder dist/ jest zawsze zmergowany
+      # ale jest dobrym zabezpieczeniem.
+      - name: 🎨 Build Design Tokens
+        run: npm run build:tokens
+
+      # 2. Zwiększenie wersji paczki (Automatyczne wersjonowanie)
+      # Używamy npm version patch, co zmieni 1.0.0 na 1.0.1
+      - name: 📈 Increment Package Version
+        run: npm version patch --no-git-tag-version
+
+      # 3. Konfiguracja Git dla commita (wymagane dla 'npm version')
+      - name: ⚙️ Configure Git User
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      # 4. Commit nowej wersji (np. 1.0.1) i wypchnięcie do 'main'
+      - name: 💾 Commit new version
+        run: |
+          git add package.json
+          git commit -m "chore(release): new version $(node -p "require('./package.json').version")"
+          git push
+
+      # 5. Publikacja paczki
+      - name: 🚀 Publish to NPM
+        run: npm publish --access public # Zmień na --access restricted dla paczek prywatnych
+        env:
+          # Token dostępu do NPM (ustawiony w GitHub Secrets)
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

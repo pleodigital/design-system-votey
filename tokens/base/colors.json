@@ -28,6 +28,10 @@
       "highlight-200": {
         "value": "#ffc107",
         "type": "color"
+      },
+      "token-studio-test": {
+        "value": "#c540c9",
+        "type": "color"
       }
     }
   }

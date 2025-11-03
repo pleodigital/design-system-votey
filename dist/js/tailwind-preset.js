@@ -6,7 +6,8 @@ export default {
   "brand-primary": "#0070f3",
   "brand-secondary": "#1a1a1a",
   "brand-highlight": "#ffc107",
-  "brand-pink-miami-color": "#ff6ec7"
+  "brand-pink-miami-color": "#ff6ec7",
+  "brand-xxx-color": "#abcdef"
 },
       spacing: {},
       borderRadius: {}

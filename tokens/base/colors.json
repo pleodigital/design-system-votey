@@ -33,6 +33,10 @@
         "value": "#c540c9",
         "type": "color"
       }
+    },
+    "kuba-test": {
+      "value": "#bd7e7e",
+      "type": "color"
     }
   }
 }

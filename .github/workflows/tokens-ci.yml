@@ -70,5 +70,5 @@ jobs:
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           github-token: ${{ secrets.GITHUB_TOKEN }} # Do komentowania PR
-          working-directory: ./
-          vercel-args: '--public --prebuilt --local-dir storybook-static'
+          working-directory: ./storybook-static
+          vercel-args: '--public'

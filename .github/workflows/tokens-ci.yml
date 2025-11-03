@@ -12,6 +12,10 @@ on:
       - 'tokens/**/*.json' # Uruchom dla PR
       - 'storybook/**'     # Uruchom też jeśli zmieniony jest kod Storybooka
 
+permissions:
+  contents: write # Nadaj uprawnienia do zapisu (pushowania)
+  pull-requests: write # Nadaj uprawnienia do tworzenia/modyfikowania Pull Requestów
+
 jobs:
   build-tokens-and-storybook:
     runs-on: ubuntu-latest

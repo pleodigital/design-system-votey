@@ -83,4 +83,4 @@ jobs:
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           working-directory: ./
-          vercel-args: '' # Użyjemy domyślnego zachowania
+          vercel-args: '--public'

@@ -43,7 +43,7 @@ jobs:
         id: create-pr
         uses: peter-evans/create-pull-request@v6
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_PAT_FOR_PR }}
           commit-message: 'chore(tokens): wygenerowano nowe tokeny po aktualizacji w Figmie'
           title: ' chore(tokens): Aktualizacja tokenów z Figmy'
           branch: auto-update/tokens-${{ github.sha }}

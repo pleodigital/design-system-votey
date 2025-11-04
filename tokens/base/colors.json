@@ -36,6 +36,10 @@
       "test": {
         "value": "#946868",
         "type": "color"
+      },
+      "kamil": {
+        "value": "#cc5252",
+        "type": "color"
       }
     },
     "kuba-test": {

@@ -49,82 +49,10 @@
     "mati-widac-po-mnie": {
       "value": "#65b657",
       "type": "color"
+    },
+    "test-123": {
+      "value": "#123123",
+      "type": "color"
     }
-  },
-  "white": {
-    "value": "#ffffff",
-    "type": "color",
-    "description": "bg"
-  },
-  "navy blue 100": {
-    "value": "#07064e",
-    "type": "color",
-    "description": "text"
-  },
-  "navy blue 70": {
-    "value": "#3b3a76",
-    "type": "color"
-  },
-  "mint green 100": {
-    "value": "#2af5ba",
-    "type": "color",
-    "description": "active element"
-  },
-  "mint green 70": {
-    "value": "#62ffd1",
-    "type": "color"
-  },
-  "mint green 25": {
-    "value": "#cafdee",
-    "type": "color"
-  },
-  "gray 400": {
-    "value": "#939393",
-    "type": "color"
-  },
-  "gray 200": {
-    "value": "#c6c6c6",
-    "type": "color"
-  },
-  "gray 100": {
-    "value": "#ececec",
-    "type": "color",
-    "description": "app BG"
-  },
-  "gray 50": {
-    "value": "#f6f6f6",
-    "type": "color"
-  },
-  "violet 100": {
-    "value": "#cdd0fd",
-    "type": "color"
-  },
-  "violet 200": {
-    "value": "#7d81bf",
-    "type": "color"
-  },
-  "active green 100": {
-    "value": "#77dc6c",
-    "type": "color"
-  },
-  "active green 200": {
-    "value": "#5fbe54",
-    "type": "color"
-  },
-  "blue 100": {
-    "value": "#62a9ff",
-    "type": "color"
-  },
-  "red 100": {
-    "value": "#f56161",
-    "type": "color"
-  },
-  "orange 500": {
-    "value": "#df6705",
-    "type": "color"
-  },
-  "orange 100": {
-    "value": "#fcd5b5",
-    "type": "color"
   }
 }

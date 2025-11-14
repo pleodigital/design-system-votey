@@ -36,7 +36,7 @@ jobs:
 
       # Krok A: Generowanie Tokenów
       - name: 🎨 Build Design Tokens (Style Dictionary)
-        run: npm run build:tokens
+        run: npm run build
 
 #      # Krok B: Automatyczne dodanie i Commit/PR wygenerowanych plików (jeśli istnieją)
 #      - name: 🔄 Commit i Utwórz PR (Wygenerowane pliki do głównej gałęzi)

@@ -37,7 +37,7 @@ jobs:
       # Ten krok jest opcjonalny, jeśli ufasz, że folder dist/ jest zawsze zmergowany
       # ale jest dobrym zabezpieczeniem.
       - name: 🎨 Build Design Tokens
-        run: npm run build:tokens
+        run: npm run build
 
       # 2. Zwiększenie wersji paczki (Automatyczne wersjonowanie)
       # Używamy npm version patch, co zmieni 1.0.0 na 1.0.1

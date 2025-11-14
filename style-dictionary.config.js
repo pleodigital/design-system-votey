@@ -1,44 +1,15 @@
 const StyleDictionary = require('style-dictionary');
 
-// Niestandardowy format dla presetu Tailwind CSS (zgodnie z przykładem)
-// Generuje plik JS, który eksportuje obiekt konfiguracji
 StyleDictionary.registerFormat({
-    name: 'javascript/tailwind-preset',
-    formatter: function(dictionary, config) {
-        const tokens = {
-            colors: {},
-            spacing: {},
-            borderRadius: {},
-            // Dodaj inne kategorie, jeśli używasz
-        };
-
-        // Prosta iteracja i mapowanie tokenów
-        dictionary.allProperties.forEach(prop => {
-            // Przykład: mapowanie 'color.brand.primary' na 'colors.brand-primary'
-            const category = prop.attributes.category;
-            const key = prop.path.slice(1).join('-'); // Usuwamy kategorię, łączymy resztę
-
-            if (category === 'color') {
-                tokens.colors[key] = prop.value;
-            } else if (category === 'spacing') {
-                tokens.spacing[key] = prop.value;
-            } else if (category === 'radius') {
-                tokens.borderRadius[key] = prop.value;
-            }
-            // Dodaj inne typy tokenów (typografia, shadow itp.)
+    name: 'css/tailwind-theme',
+    formatter: function ({ dictionary, options }) {
+        const lines = dictionary.allProperties.map(token => {
+            const name = `--${token.name}`;
+            return `  ${name}: ${token.value};`;
         });
-
-        return `
-export default {
-  theme: {
-    extend: {
-      colors: ${JSON.stringify(tokens.colors, null, 2)},
-      spacing: ${JSON.stringify(tokens.spacing, null, 2)},
-      borderRadius: ${JSON.stringify(tokens.borderRadius, null, 2)}
-    }
-  },
-  plugins: []
-};`;
+        return `@theme {
+${lines.join('\n')}
+}`;
     }
 });
 
@@ -67,9 +38,11 @@ module.exports = {
             files: [
                 {
                     destination: 'tokens.css',
-                    format: 'css/variables',
+                    // format: 'css/variables',
+                    format: 'css/tailwind-theme',
                     options: {
-                        selector: ':root',
+                        // selector: ':root',
+                        selector: '',
                     },
                 },
             ],

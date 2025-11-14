@@ -75,6 +75,10 @@
       "value": "#ffffff",
       "type": "color",
       "description": "bg"
+    },
+    "deeppink-100": {
+      "value": "#e232dc",
+      "type": "color"
     }
   }
 }

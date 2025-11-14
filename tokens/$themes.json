@@ -3,9 +3,7 @@
     "id": "base/colors-base/colors",
     "name": "base/colors",
     "group": "base/colors",
-    "selectedTokenSets": {
-      "base/colors/base/colors": "enabled"
-    },
+    "selectedTokenSets": {},
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "test-mint-green-100": "e8d7c066abf500a0cf78b579f3b04c0f30107b8f",

@@ -1,73 +1,73 @@
 {
   "color": {
-    "active green 100": {
+    "active-green-100": {
       "value": "#77dc6c",
       "type": "color"
     },
-    "active green 200": {
+    "active-green-200": {
       "value": "#5fbe54",
       "type": "color"
     },
-    "blue 100": {
+    "blue-100": {
       "value": "#62a9ff",
       "type": "color"
     },
-    "gray 50": {
+    "gray-50": {
       "value": "#f6f6f6",
       "type": "color"
     },
-    "gray 100": {
+    "gray-100": {
       "value": "#ececec",
       "type": "color",
       "description": "app BG"
     },
-    "gray 200": {
-      "value": "#c6c6c6",
-      "type": "color"
-    },
-    "gray 400": {
-      "value": "#939393",
-      "type": "color"
-    },
-    "mint green 100": {
+    "mint-green-100": {
       "value": "#2af5ba",
       "type": "color",
       "description": "active element"
     },
-    "mint green 70": {
+    "gray-200": {
+      "value": "#c6c6c6",
+      "type": "color"
+    },
+    "gray-400": {
+      "value": "#939393",
+      "type": "color"
+    },
+    "mint-green-70": {
       "value": "#62ffd1",
       "type": "color"
     },
-    "mint green 25": {
+    "mint-green-25": {
       "value": "#cafdee",
       "type": "color"
     },
-    "navy blue 100": {
+    "navy-blue-100": {
       "value": "#07064e",
       "type": "color",
       "description": "text"
     },
-    "navy blue 70": {
+    "navy-blue-70": {
       "value": "#3b3a76",
       "type": "color"
     },
-    "red 100": {
+    "red-100": {
       "value": "#f56161",
       "type": "color"
     },
-    "orange 500": {
+    "orange-500": {
       "value": "#df6705",
       "type": "color"
     },
-    "orange 100": {
+    "orange-100": {
       "value": "#fcd5b5",
       "type": "color"
     },
-    "violet 100": {
+    "violet-100": {
       "value": "#cdd0fd",
       "type": "color"
     },
-    "violet 200": {
+    "violet-200": {
       "value": "#7d81bf",
       "type": "color"
     },

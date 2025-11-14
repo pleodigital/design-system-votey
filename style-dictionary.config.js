@@ -61,17 +61,18 @@ module.exports = {
             ]
         },
 
-        // Platforma 2: Next.js (Tailwind Preset JS)
-        'tailwind-preset': {
-            // Używamy niestandardowego formatu
-            transformGroup: 'js',
-            buildPath: 'dist/js/',
+        css: {
+            transformGroup: 'css',
+            buildPath: 'dist/css/',
             files: [
                 {
-                    destination: 'tailwind-preset.js',
-                    format: 'javascript/tailwind-preset',
-                }
-            ]
-        }
+                    destination: 'tokens.css',
+                    format: 'css/variables',
+                    options: {
+                        selector: ':root',
+                    },
+                },
+            ],
+        },
     }
 };

@@ -1,15 +1,18 @@
 {
   "name": "@pleodigital/design-system-votey",
-  "version": "1.0.1",
+  "version": "1.0.6",
   "description": "Centralny system tokenów projektowych generowany przez Style Dictionary.",
   "main": "dist/js/tailwind-preset.js",
   "files": [
-    "dist"
+    "dist",
+    "assets"
   ],
   "scripts": {
     "build:tokens": "style-dictionary build --config style-dictionary.config.js",
+    "copy:assets": "cpx \"assets/{icons,illustrations}/**/*\" dist/assets",
+    "build": "npm run build:tokens && npm run copy:assets",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "npm run build && storybook build"
   },
   "keywords": [
     "design-tokens",
@@ -29,6 +32,7 @@
     "@storybook/react": "^8.0.0",
     "@storybook/react-vite": "^8.0.0",
     "@storybook/test": "^8.0.0",
+    "cpx": "^1.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^8.0.0",

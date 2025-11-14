@@ -6,6 +6,7 @@ on:
     branches: ['feature/**']
     paths:
       - 'tokens/**/*.json' # Tylko jeśli zmieniony jest JSON tokenów
+      - 'assets/**'
   pull_request:
     types: [opened, synchronize, reopened]
     paths:

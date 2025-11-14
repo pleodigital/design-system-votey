@@ -1,59 +1,5 @@
 {
   "color": {
-    "brand": {
-      "primary": {
-        "value": "#0070f3",
-        "type": "color"
-      },
-      "secondary": {
-        "value": "#1a1a1a",
-        "type": "color"
-      },
-      "highlight": {
-        "value": "#ffc107",
-        "type": "color"
-      },
-      "pink-miami-color": {
-        "value": "ff6ec7",
-        "type": "color"
-      },
-      "xxx-color": {
-        "value": "abcdef",
-        "type": "color"
-      },
-      "highlight-100": {
-        "value": "#ffc107",
-        "type": "color"
-      },
-      "highlight-200": {
-        "value": "#ffc107",
-        "type": "color"
-      },
-      "token-studio-test": {
-        "value": "#c540c9",
-        "type": "color"
-      },
-      "test": {
-        "value": "#946868",
-        "type": "color"
-      },
-      "kamil": {
-        "value": "#cc5252",
-        "type": "color"
-      }
-    },
-    "kuba-test": {
-      "value": "#bd7e7e",
-      "type": "color"
-    },
-    "test-123": {
-      "value": "#123123",
-      "type": "color"
-    },
-    "mati-widac-po-mnie": {
-      "value": "#65b657",
-      "type": "color"
-    },
     "active green 100": {
       "value": "#77dc6c",
       "type": "color"

@@ -6,7 +6,7 @@ const iconList = getIconList();
 const illustrationList = getIllustrationList();
 
 export default {
-    title: 'Assets/Wizualizacja',
+    title: 'Assets/Icons and Illustrations',
     component: AssetCard,
 };
 

@@ -49,20 +49,12 @@
       "value": "#3b3a76",
       "type": "color"
     },
-    "red-100": {
-      "value": "#f56161",
-      "type": "color"
-    },
     "orange-500": {
       "value": "#df6705",
       "type": "color"
     },
     "orange-100": {
       "value": "#fcd5b5",
-      "type": "color"
-    },
-    "violet-100": {
-      "value": "#cdd0fd",
       "type": "color"
     },
     "violet-200": {

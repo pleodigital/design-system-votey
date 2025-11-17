@@ -15,6 +15,21 @@ const cardStyle = {
     boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)'
 };
 
+const cardIconStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    padding: '16px',
+    border: '1px solid #e0e0e0',
+    borderRadius: '4px',
+    textAlign: 'center',
+    margin: '2px',
+    minWidth: '220px',
+    minHeight: '100px',
+    justifyContent: 'center',
+    boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)'
+};
+
 export const AssetCard = ({ asset }) => {
     const innerDivStyle = asset.type === 'icon'
         ? {
@@ -31,8 +46,9 @@ export const AssetCard = ({ asset }) => {
             overflow: 'hidden',
             marginBottom: '10px'
         };
+    const isIcon = asset.type === 'icon';
     return (
-        <div style={cardStyle}>
+        <div style={isIcon ? cardIconStyle : cardStyle} className={isIcon ? "asset-card" : ''}>
             <div style={innerDivStyle}>
                 {asset.Component && (
                     <asset.Component

@@ -1,10 +1,10 @@
+import * as React from "react";
 import type { SVGProps } from "react";
 const SvgIlluBgAddParticipantsToVote = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={885}
-    height={360}
     fill="none"
+    viewBox="0 0 885 360"
     {...props}
   >
     <rect

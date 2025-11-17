@@ -7,3 +7,4 @@ export { default as IconUiCameraOn } from "./IconUiCameraOn";
 export { default as IconUiChat } from "./IconUiChat";
 export { default as IconUiDelete } from "./IconUiDelete";
 export { default as IconUiDownload } from "./IconUiDownload";
+export { default as IconUiEdit } from "./IconUiEdit";

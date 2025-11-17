@@ -8,14 +8,6 @@
       "value": "#5fbe54",
       "type": "color"
     },
-    "blue-100": {
-      "value": "#62a9ff",
-      "type": "color"
-    },
-    "gray-50": {
-      "value": "#f6f6f6",
-      "type": "color"
-    },
     "gray-100": {
       "value": "#f6f6f6",
       "type": "color"
@@ -24,29 +16,13 @@
       "value": "#cafdee",
       "type": "color"
     },
-    "gray-200": {
-      "value": "#c6c6c6",
-      "type": "color"
-    },
     "gray-400": {
       "value": "#ececec",
       "type": "color",
       "description": "app BG"
     },
-    "mint-green-70": {
-      "value": "#62ffd1",
-      "type": "color"
-    },
-    "mint-green-25": {
-      "value": "#cafdee",
-      "type": "color"
-    },
     "navy-blue-100": {
       "value": "#7d81bf",
-      "type": "color"
-    },
-    "navy-blue-70": {
-      "value": "#3b3a76",
       "type": "color"
     },
     "orange-500": {
@@ -55,10 +31,6 @@
     },
     "orange-100": {
       "value": "#fcd5b5",
-      "type": "color"
-    },
-    "violet-200": {
-      "value": "#7d81bf",
       "type": "color"
     },
     "white": {
@@ -104,8 +76,12 @@
       "value": "#f56161",
       "type": "color"
     },
-    "deeppink-400": {
-      "value": "#e232dc",
+    "orange-75": {
+      "value": "#ffe7d4",
+      "type": "color"
+    },
+    "orange-50": {
+      "value": "#fff3e8",
       "type": "color"
     }
   }

@@ -1,0 +1,20 @@
+import type { SVGProps } from "react";
+const SvgIconIuDownload = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={26}
+    height={26}
+    fill="none"
+    {...props}
+  >
+    <g fill="#151752" clipPath="url(#icon_iu_download_svg__a)">
+      <path d="M12.572 19.706a.614.614 0 0 0 .858 0l6.276-6.278a.613.613 0 0 0-.866-.867l-5.233 5.25V3.252a.607.607 0 1 0-1.214 0v14.56l-5.241-5.24a.61.61 0 1 0-.858.866zM22.1 22.119H3.9a.607.607 0 1 0 0 1.213h18.2a.607.607 0 0 0 0-1.213" />
+    </g>
+    <defs>
+      <clipPath id="icon_iu_download_svg__a">
+        <path fill="#fff" d="M0 0h26v26H0z" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+export default SvgIconIuDownload;

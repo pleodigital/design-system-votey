@@ -25,8 +25,56 @@ const flattenTokens = (obj, prefix = '') => {
         }
     }
 
+    // 🚨 KROK 1: Sortowanie alfabetyczne (grupowanie)
     tokens.sort((a, b) => {
         return a.name.localeCompare(b.name);
+    });
+
+    // 🚨 KROK 2: Sortowanie liczbowe wewnątrz grup (odcienie)
+    tokens.sort((a, b) => {
+
+        // Funkcja pomocnicza do ekstrakcji liczby odcienia z nazwy
+        const extractShadeNumber = (tokenName) => {
+            // Szukamy liczby na końcu nazwy tokenu po ostatnim myślniku
+            // np. --color-mint-70 -> 70, --color-gray-500 -> 500, --color-red-100 -> 100
+            const parts = tokenName.split('-');
+            const lastPart = parts[parts.length - 1];
+
+            // Konwertujemy na liczbę całkowitą (np. '100' -> 100, '50' -> 50)
+            const number = parseInt(lastPart, 10);
+
+            // Zwracamy liczbę, a jeśli to nie jest odcień liczbowy (np. 'white'), zwracamy 0,
+            // ale musimy uważać, by nie kolidowało to z prawdziwym odcieniem 0.
+            // Dla bezpieczeństwa, dla niestandardowych nazw (np. 'primary') możemy użyć bardzo dużej liczby
+            return isNaN(number) ? Infinity : number;
+        };
+
+        const shadeA = extractShadeNumber(a.name);
+        const shadeB = extractShadeNumber(b.name);
+
+        // Jeśli odcienie są różne (np. 100 vs 50), sortujemy je liczbowo
+        if (shadeA !== shadeB) {
+            return shadeA - shadeB;
+        }
+
+        // Jeśli odcienie są takie same (lub oba są Infinity/niestandardowe),
+        // wracamy do sortowania alfabetycznego (które już zostało wykonane w kroku 1).
+        // W praktyce w tym punkcie sortowanie jest już stabilne.
+        // Jeśli jednak chcemy zapewnić, że np. 'color-gray-100' i 'color-red-100' będą
+        // we właściwej grupie, sortowanie alfabetyczne musi być na samym początku.
+
+        // Najlepsze jest połączenie sortowania:
+        // 1. Sortuj alfabetycznie według pełnej nazwy grupy (np. 'navy-blue', 'red')
+        const groupA = a.name.substring(0, a.name.lastIndexOf('-'));
+        const groupB = b.name.substring(0, b.name.lastIndexOf('-'));
+
+        // Jeśli są w tej samej grupie (np. oba są 'navy-blue-'), sortujemy numerycznie
+        if (groupA === groupB) {
+            return shadeA - shadeB;
+        } else {
+            // W przeciwnym razie, sortujemy alfabetycznie według grupy
+            return groupA.localeCompare(groupB);
+        }
     });
 
     return tokens;

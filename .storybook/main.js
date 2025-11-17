@@ -1,6 +1,7 @@
 const config = {
     stories: [
         "../storybook/**/*.mdx",
+        "../storybook/**/Color.stories.jsx",
         "../storybook/**/*.stories.@(js|jsx|mjs|ts|tsx)",
     ],
     addons: [

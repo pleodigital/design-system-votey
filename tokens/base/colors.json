@@ -74,10 +74,6 @@
       "type": "color",
       "description": "bg"
     },
-    "deeppink-100": {
-      "value": "#e232dc",
-      "type": "color"
-    },
     "mint-green-400": {
       "value": "#2af5ba",
       "type": "color",
@@ -114,6 +110,10 @@
     },
     "red-400": {
       "value": "#f56161",
+      "type": "color"
+    },
+    "deeppink-400": {
+      "value": "#e232dc",
       "type": "color"
     }
   }

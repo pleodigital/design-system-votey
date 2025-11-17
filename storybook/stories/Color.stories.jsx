@@ -7,6 +7,11 @@ export default {
     component: ColorSwatch,
 };
 
+const ALL_SHADES = [
+    '25', '50', '70', '100', '200', '300',
+    '400', '500', '600', '700', '800', '900'
+];
+
 const flattenTokens = (obj, prefix = '') => {
     let tokens = [];
 
@@ -101,16 +106,46 @@ const groupTokensByBaseColor = (flatTokens) => {
     return grouped;
 };
 
-const ColorRow = ({ groupName, tokens }) => (
-    <div style={{ marginBottom: '1px', borderBottom: '1px solid #ddd', paddingBottom: '10px' }}>
-        <h3 style={{fontStyle: 'italic', fontSize: "14px", color: tokens[0].value === '#ffffff' ? '#c6c6c6' : tokens[0].value}}>{groupName.toUpperCase()}</h3>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
-            {tokens.map(token => (
-                <ColorSwatch key={token.name} token={token} />
-            ))}
+const createShadeGrid = (groupName, definedTokens) => {
+    const tokenMap = definedTokens.reduce((acc, token) => {
+        // Nazwa odcienia to ostatni człon nazwy tokenu (np. "100")
+        const shade = token.name.substring(token.name.lastIndexOf('-') + 1);
+        acc[shade] = token;
+        return acc;
+    }, {});
+
+    return ALL_SHADES.map(shade => {
+        if (tokenMap[shade]) {
+            // 🚨 TOKEN ISTNIEJE: Dodajemy pole 'shade'
+            return { ...tokenMap[shade], shade: shade };
+        } else {
+            // 🚨 PLACEHOLDER: Używamy numeru odcienia jako głównego tekstu
+            return {
+                name: `${groupName}-${shade} (Brak)`,
+                value: '',
+                isPlaceholder: true,
+                shade: shade
+            };
+        }
+    });
+};
+
+const ColorRow = ({ groupName, tokens }) => {
+    const gridTokens = createShadeGrid(groupName, tokens);
+    const fullPrefix = `--color-${groupName}-`;
+    return (
+        <div style={{ marginBottom: '20px', borderBottom: '1px solid #ddd', paddingBottom: '10px' }}>
+            <h3>{fullPrefix}</h3>
+            <div style={{ display: 'flex', flexWrap: 'wrap', rowGap: '10px' }}>
+                {gridTokens.map(token => (
+                    <div key={token.name} style={{ flexShrink: 0, margin: '0 5px' }}>
+                        <ColorSwatch token={token} />
+                    </div>
+                ))}
+            </div>
         </div>
-    </div>
-);
+    );
+};
 
 
 export const Palette = {

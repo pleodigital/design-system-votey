@@ -68,10 +68,6 @@
       "value": "#f56161",
       "type": "color"
     },
-    "orange-75": {
-      "value": "#ffe7d4",
-      "type": "color"
-    },
     "orange-50": {
       "value": "#fff3e8",
       "type": "color"
@@ -82,6 +78,10 @@
     },
     "active-green-500": {
       "value": "#5fbe54",
+      "type": "color"
+    },
+    "orange-70": {
+      "value": "#ffe7d4",
       "type": "color"
     }
   }

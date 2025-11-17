@@ -1,4 +1,3 @@
-export { default as IconCalendar } from "./IconCalendar";
 export { default as IconMenuButtonShowTable } from "./IconMenuButtonShowTable";
 export { default as IconMenuDashboard } from "./IconMenuDashboard";
 export { default as IconMenuParticipants } from "./IconMenuParticipants";

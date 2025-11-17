@@ -1,13 +1,5 @@
 {
   "color": {
-    "active-green-100": {
-      "value": "#77dc6c",
-      "type": "color"
-    },
-    "active-green-200": {
-      "value": "#5fbe54",
-      "type": "color"
-    },
     "gray-100": {
       "value": "#f6f6f6",
       "type": "color"
@@ -82,6 +74,14 @@
     },
     "orange-50": {
       "value": "#fff3e8",
+      "type": "color"
+    },
+    "active-green-400": {
+      "value": "#77dc6c",
+      "type": "color"
+    },
+    "active-green-500": {
+      "value": "#5fbe54",
       "type": "color"
     }
   }

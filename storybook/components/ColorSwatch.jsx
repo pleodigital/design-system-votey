@@ -19,9 +19,11 @@ const flattenTokens = (obj, prefix = '') => {
 
     for (const key in obj) {
         if (obj[key].value && obj[key].type === 'color') {
-            const cssName = `--${prefix}${key}`;
+            const rawCssName = `${prefix}${key}`;
+            const name = `--${rawCssName.replace(/\./g, '-')}`;
+
             tokens.push({
-                name: cssName.replace(/\./g, '-'),
+                name: name,
                 value: obj[key].value,
             });
 
@@ -29,6 +31,11 @@ const flattenTokens = (obj, prefix = '') => {
             tokens = tokens.concat(flattenTokens(obj[key], prefix + key + '-'));
         }
     }
+
+    tokens.sort((a, b) => {
+        return a.name.localeCompare(b.name);
+    });
+
     return tokens;
 };
 

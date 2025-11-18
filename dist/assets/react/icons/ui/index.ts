@@ -8,3 +8,5 @@ export { default as IconUiChat } from "./IconUiChat";
 export { default as IconUiDelete } from "./IconUiDelete";
 export { default as IconUiDownload } from "./IconUiDownload";
 export { default as IconUiEdit } from "./IconUiEdit";
+export { default as IconUiFullScreen } from "./IconUiFullScreen";
+export { default as IconUiGoTo } from "./IconUiGoTo";

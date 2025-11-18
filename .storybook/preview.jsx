@@ -4,8 +4,8 @@ import './preview-styles.css'
 const preview = {
     decorators: [
         (Story) => (
-            <div style={{ fontFamily: 'Nunito Sans, sans-serif' }}>
-                <Story />
+            <div style={{fontFamily: 'Nunito Sans, sans-serif'}}>
+                <Story/>
             </div>
         ),
     ],

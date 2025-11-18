@@ -30,7 +30,7 @@ const cardIconStyle = {
     boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)'
 };
 
-export const AssetCard = ({ asset }) => {
+export const AssetCard = ({asset}) => {
     const innerDivStyle = asset.type === 'icon'
         ? {
             width: '26px',
@@ -40,7 +40,7 @@ export const AssetCard = ({ asset }) => {
             marginBottom: '10px'
         }
         : {
-            width: '40vw',
+            width: '20vw',
             height: 'auto',
             color: '#333',
             overflow: 'hidden',
@@ -53,11 +53,16 @@ export const AssetCard = ({ asset }) => {
                 {asset.Component && (
                     <asset.Component
                         aria-hidden="true"
-                        style={{ maxWidth: '100%', maxHeight: '100%', height: 'auto' }}
+                        style={{maxWidth: '100%', maxHeight: '100%', height: 'auto'}}
                     />
                 )}
             </div>
-            <p style={{ color: '#000', textShadow: '0 0 3px #fff', fontStyle: 'italic', wordBreak: 'break-all' }}>{asset.name}</p>
+            <p style={{
+                color: '#000',
+                textShadow: '0 0 3px #fff',
+                fontStyle: 'italic',
+                wordBreak: 'break-all'
+            }}>{asset.name}</p>
         </div>
     );
 };

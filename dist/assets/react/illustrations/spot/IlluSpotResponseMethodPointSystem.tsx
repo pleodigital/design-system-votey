@@ -7,9 +7,13 @@ const SvgIlluSpotResponseMethodPointSystem = (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 200 140"
+    aria-hidden={true}
     {...props}
   >
-    <g id="illu_spot_response-method-point-system/Default" clipPath="url(#a)">
+    <g
+      id="illu_spot_response-method-point-system/Default"
+      clipPath="url(#clip0_77_349)"
+    >
       <g id="illu_spot_response-method-point-system">
         <g id="background" fill="#2BF5BA">
           <path d="M15.889 90.929c4.104-2.593 6.059-6.867 4.366-9.548s-6.393-2.75-10.497-.158-6.06 6.867-4.366 9.547 6.393 2.751 10.497.159" />
@@ -92,7 +96,7 @@ const SvgIlluSpotResponseMethodPointSystem = (
       </g>
     </g>
     <defs>
-      <clipPath id="a">
+      <clipPath id="clip0_77_349">
         <path fill="#fff" d="M0 0h200v140H0z" />
       </clipPath>
     </defs>

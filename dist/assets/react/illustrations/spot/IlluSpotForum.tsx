@@ -5,9 +5,10 @@ const SvgIlluSpotForum = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 200 140"
+    aria-hidden={true}
     {...props}
   >
-    <g id="illu_spot_forum/Default" clipPath="url(#a)">
+    <g id="illu_spot_forum/Default" clipPath="url(#clip0_70_5261)">
       <g id="illu_spot_forum">
         <g id="background" fill="#2BF5BA">
           <path d="M15.635 19.085c-3.825 2.75-8.55 2.28-10.55-1.05s-.52-8.26 3.31-11.005c3.825-2.75 8.55-2.28 10.55 1.05s.52 8.26-3.31 11.005M183.875 41.09a6.38 6.38 0 1 0 0-12.76 6.38 6.38 0 0 0 0 12.76M31.26 115.05C17.07 101.6 11.12 85.705 9.345 80.445 5.515 69.105-.115 51.68 7.78 35.42 17.47 15.47 41.245 9.915 52.415 7.305c9.21-2.15 27.17-6.68 58.56 3.475 31.38 10.155 60.85 2.005 61.24 34.35.435 36.15 21.115 14.65 22.295 49.755.045 1.33-.205 9.01-3.58 15.47-6.215 11.88-21.29 15.925-32.885 18.195-43.175 8.46-93.255 18.27-126.785-13.5" />
@@ -100,7 +101,7 @@ const SvgIlluSpotForum = (props: SVGProps<SVGSVGElement>) => (
       </g>
     </g>
     <defs>
-      <clipPath id="a">
+      <clipPath id="clip0_70_5261">
         <path fill="#fff" d="M0 0h200v140H0z" />
       </clipPath>
     </defs>

@@ -5,9 +5,10 @@ const SvgIlluSpotArrowSimple = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 150 150"
+    aria-hidden={true}
     {...props}
   >
-    <g id="illu_spot_arrow_simple" clipPath="url(#a)">
+    <g id="illu_spot_arrow_simple" clipPath="url(#clip0_66_3968)">
       <g id="illu_spot_arrow_simple_2">
         <g id="illu_spot_arrow_simple_3">
           <g id="stroke">
@@ -31,7 +32,7 @@ const SvgIlluSpotArrowSimple = (props: SVGProps<SVGSVGElement>) => (
       </g>
     </g>
     <defs>
-      <clipPath id="a">
+      <clipPath id="clip0_66_3968">
         <path fill="#fff" d="M0 0h150v150H0z" />
       </clipPath>
     </defs>

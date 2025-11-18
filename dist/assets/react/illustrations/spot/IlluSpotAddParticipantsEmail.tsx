@@ -5,9 +5,13 @@ const SvgIlluSpotAddParticipantsEmail = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 200 140"
+    aria-hidden={true}
     {...props}
   >
-    <g id="illu_spot_add-participants-email/Default" clipPath="url(#a)">
+    <g
+      id="illu_spot_add-participants-email/Default"
+      clipPath="url(#clip0_70_5362)"
+    >
       <g id="illu_spot_add-participants-email">
         <g id="background" fill="#2BF5BA">
           <path d="M183.45 10.51c27.645 19.33 12.385 84.945-34.78 114.78-32.14 20.335-91.245 5.9-106.71 2.875C5.895 121.12-4.11 97.8 13.935 74.62c26.4-33.9-10.39-13.195-11.13-45.66-.46-20.185 21.82-26.845 51.35-20.88C122.84 21.955 156.21-8.535 183.45 10.51M195.887 120.119c1.017-2.457-1.126-5.677-4.787-7.193s-7.454-.753-8.471 1.704 1.126 5.678 4.787 7.194c3.661 1.515 7.454.752 8.471-1.705" />
@@ -171,7 +175,7 @@ const SvgIlluSpotAddParticipantsEmail = (props: SVGProps<SVGSVGElement>) => (
       </g>
     </g>
     <defs>
-      <clipPath id="a">
+      <clipPath id="clip0_70_5362">
         <path fill="#fff" d="M0 0h200v140H0z" />
       </clipPath>
     </defs>

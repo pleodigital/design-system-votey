@@ -5,9 +5,13 @@ const SvgIlluSpotAddParticipantsSms = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 200 140"
+    aria-hidden={true}
     {...props}
   >
-    <g id="illu_spot_add-participants-SMS/Default" clipPath="url(#a)">
+    <g
+      id="illu_spot_add-participants-SMS/Default"
+      clipPath="url(#clip0_70_5317)"
+    >
       <g id="illu_spot_add-participants-SMS">
         <g id="background" fill="#2BF5BA">
           <path d="M4.645 61.625c-.575-2.485 1.33-5.16 4.255-5.965 2.93-.81 5.77.555 6.345 3.04s-1.33 5.16-4.255 5.965c-2.93.81-5.77-.555-6.345-3.04" />
@@ -154,7 +158,7 @@ const SvgIlluSpotAddParticipantsSms = (props: SVGProps<SVGSVGElement>) => (
       </g>
     </g>
     <defs>
-      <clipPath id="a">
+      <clipPath id="clip0_70_5317">
         <path fill="#fff" d="M0 0h200v140H0z" />
       </clipPath>
     </defs>

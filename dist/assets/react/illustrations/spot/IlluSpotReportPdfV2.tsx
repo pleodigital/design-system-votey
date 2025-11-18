@@ -5,9 +5,10 @@ const SvgIlluSpotReportPdfV2 = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 200 140"
+    aria-hidden={true}
     {...props}
   >
-    <g id="illu_spot_report-pdf-v2/Default" clipPath="url(#a)">
+    <g id="illu_spot_report-pdf-v2/Default" clipPath="url(#clip0_70_4531)">
       <g id="illu_spot_report-pdf-v2">
         <g id="background" fill="#2BF5BA">
           <path d="M12.46 31.54c-6.16-.085-10.755-4.255-10.27-9.31s5.875-9.08 12.035-8.995 10.755 4.255 10.27 9.31-5.875 9.08-12.035 8.995M188.645 58.755a6.38 6.38 0 1 0 0-12.76 6.38 6.38 0 0 0 0 12.76M190.28 37.045a2.535 2.535 0 1 0 0-5.07 2.535 2.535 0 0 0 0 5.07M28.71 9.745c-.725 1.41-2.56 2.02-4.1 1.36S22.405 8.77 23.13 7.36s2.56-2.02 4.1-1.36 2.205 2.335 1.48 3.745" />
@@ -58,7 +59,7 @@ const SvgIlluSpotReportPdfV2 = (props: SVGProps<SVGSVGElement>) => (
       </g>
     </g>
     <defs>
-      <clipPath id="a">
+      <clipPath id="clip0_70_4531">
         <path fill="#fff" d="M0 0h200v140H0z" />
       </clipPath>
     </defs>

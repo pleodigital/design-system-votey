@@ -1,19 +1,10 @@
 @theme {
-  --color-active-green-100: #77dc6c;
-  --color-active-green-200: #5fbe54;
-  --color-blue-100: #62a9ff;
-  --color-gray-50: #f6f6f6;
   --color-gray-100: #f6f6f6;
   --color-mint-green-100: #cafdee;
-  --color-gray-200: #c6c6c6;
   --color-gray-400: #ececec;
-  --color-mint-green-70: #62ffd1;
-  --color-mint-green-25: #cafdee;
   --color-navy-blue-100: #7d81bf;
-  --color-navy-blue-70: #3b3a76;
   --color-orange-500: #df6705;
   --color-orange-100: #fcd5b5;
-  --color-violet-200: #7d81bf;
   --color-white: #ffffff;
   --color-mint-green-400: #2af5ba;
   --color-mint-green-300: #62ffd1;
@@ -24,5 +15,8 @@
   --color-navy-blue-400: #3b3a76;
   --color-navy-blue-50: #cdd0fd;
   --color-red-400: #f56161;
-  --color-deeppink-400: #e232dc;
+  --color-orange-50: #fff3e8;
+  --color-active-green-400: #77dc6c;
+  --color-active-green-500: #5fbe54;
+  --color-orange-70: #ffe7d4;
 }

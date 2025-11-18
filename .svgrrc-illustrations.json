@@ -1,0 +1,22 @@
+{
+  "svgo": true,
+  "svgoConfig": {
+    "plugins": [
+      {
+        "name": "removeDimensions",
+        "active": true
+      },
+      {
+        "name": "preset-default",
+        "params": {
+          "overrides": {
+            "cleanupIds": {
+              "minify": true,
+              "remove": false
+            }
+          }
+        }
+      }
+    ]
+  }
+}

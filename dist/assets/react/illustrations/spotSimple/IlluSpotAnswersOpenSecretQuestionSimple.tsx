@@ -7,11 +7,12 @@ const SvgIlluSpotAnswersOpenSecretQuestionSimple = (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 200 140"
+    aria-hidden={true}
     {...props}
   >
     <g
       id="illu_spot_answers-open-secret-question_simple/Default"
-      clipPath="url(#a)"
+      clipPath="url(#clip0_66_4264)"
     >
       <g id="illu_spot_answers-open-secret-question_simple">
         <g id="background" fill="#2BF5BA">
@@ -81,7 +82,7 @@ const SvgIlluSpotAnswersOpenSecretQuestionSimple = (
       </g>
     </g>
     <defs>
-      <clipPath id="a">
+      <clipPath id="clip0_66_4264">
         <path fill="#fff" d="M0 0h200v140H0z" />
       </clipPath>
     </defs>

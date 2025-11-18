@@ -5,9 +5,10 @@ const SvgIlluSpotNoResult = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 200 140"
+    aria-hidden={true}
     {...props}
   >
-    <g id="illu_spot_no-result/Default" clipPath="url(#a)">
+    <g id="illu_spot_no-result/Default" clipPath="url(#clip0_70_5073)">
       <g id="background" fill="#2BF5BA">
         <path d="M193.442 60.572c4.105-2.592 6.059-6.867 4.366-9.547s-6.392-2.751-10.497-.158-6.059 6.867-4.366 9.547 6.393 2.75 10.497.158" />
         <path d="M193.65 16.43c10.76 11.74-29.89 32.29-20.52 61.9 17.61 55.635-73.295 62.535-107.6 52.37-26.465-7.845-35.255-22.955-44.35-35.48C9.55 79.185-2.755 59.875 5.495 36.58c8.16-23.045 40.7-39.95 89.745-27 80.02 21.13 86.75-5.875 98.415 6.85zM9.185 117.78a6.615 6.615 0 1 0 0-13.23 6.615 6.615 0 0 0 0 13.23" />
@@ -65,7 +66,7 @@ const SvgIlluSpotNoResult = (props: SVGProps<SVGSVGElement>) => (
       </g>
     </g>
     <defs>
-      <clipPath id="a">
+      <clipPath id="clip0_70_5073">
         <path fill="#fff" d="M0 0h200v140H0z" />
       </clipPath>
     </defs>

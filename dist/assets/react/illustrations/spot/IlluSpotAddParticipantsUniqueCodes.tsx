@@ -7,9 +7,13 @@ const SvgIlluSpotAddParticipantsUniqueCodes = (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 200 140"
+    aria-hidden={true}
     {...props}
   >
-    <g id="illu_spot_add-participants-unique-codes/Default" clipPath="url(#a)">
+    <g
+      id="illu_spot_add-participants-unique-codes/Default"
+      clipPath="url(#clip0_70_5476)"
+    >
       <g id="illu_spot_add-participants-unique-codes">
         <g id="background" fill="#2BF5BA">
           <path d="M167.94 15.12c37.035 20.35 29.89 114.285 11.285 119.02-33.065 8.415-25.89-10.5-88.24-1.63-35.76 5.085-62.105 2.82-62.66-28.41-.47-26.37-24.44-29.855-25.245-64.235-.5-21.37 19.35-43.67 50.485-33.825 61.04 19.3 79.51-10.075 114.375 9.08" />
@@ -214,7 +218,7 @@ const SvgIlluSpotAddParticipantsUniqueCodes = (
       </g>
     </g>
     <defs>
-      <clipPath id="a">
+      <clipPath id="clip0_70_5476">
         <path fill="#fff" d="M0 0h200v140H0z" />
       </clipPath>
     </defs>

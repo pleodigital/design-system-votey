@@ -5,9 +5,10 @@ const SvgIlluSpotAgendaNoVisible = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 200 140"
+    aria-hidden={true}
     {...props}
   >
-    <g id="illu_spot_agenda-no-visible/Default" clipPath="url(#a)">
+    <g id="illu_spot_agenda-no-visible/Default" clipPath="url(#clip0_70_4863)">
       <g id="illu_spot_agenda-no-visible">
         <g id="background" fill="#2BF5BA">
           <path d="M38.66 136.325C.285 127.795-5.485 90.785 14.5 56.79c25.75-43.8 56.77-52.27 88.01-53.92 32.94-1.74 63.485 1.365 58.63 28.975-6.26 35.61 35.51 27.1 36.69 62.205.635 18.91-20.63 28.875-51.035 24.665-84.82-11.745-70.96 25.87-108.13 17.61zM12.46 31.54c-6.16-.085-10.755-4.255-10.27-9.31s5.875-9.08 12.035-8.995 10.755 4.255 10.27 9.31-5.875 9.08-12.035 8.995M28.71 9.745c-.725 1.41-2.56 2.02-4.1 1.36S22.405 8.77 23.13 7.36s2.56-2.02 4.1-1.36 2.205 2.335 1.48 3.745" />
@@ -67,7 +68,7 @@ const SvgIlluSpotAgendaNoVisible = (props: SVGProps<SVGSVGElement>) => (
       </g>
     </g>
     <defs>
-      <clipPath id="a">
+      <clipPath id="clip0_70_4863">
         <path fill="#fff" d="M0 0h200v140H0z" />
       </clipPath>
     </defs>

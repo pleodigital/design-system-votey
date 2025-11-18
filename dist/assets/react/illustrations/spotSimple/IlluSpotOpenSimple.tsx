@@ -5,9 +5,10 @@ const SvgIlluSpotOpenSimple = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 200 140"
+    aria-hidden={true}
     {...props}
   >
-    <g id="illu_spot_open_simple/Default" clipPath="url(#a)">
+    <g id="illu_spot_open_simple/Default" clipPath="url(#clip0_66_3971)">
       <g id="illu_spot_open_simple">
         <g id="background" fill="#2BF5BA">
           <path d="M16.15 27.148c4.836 0 8.756-3.923 8.756-8.761 0-4.839-3.92-8.761-8.756-8.761s-8.756 3.922-8.756 8.76c0 4.84 3.92 8.762 8.756 8.762M188.031 111.764c4.2 4.654 3.832 11.828-.819 16.028s-11.831 3.833-16.031-.821c-4.2-4.655-3.831-11.829.819-16.029s11.831-3.833 16.031.822M141.575 11.188a3.214 3.214 0 0 0 3.212-3.217 3.214 3.214 0 0 0-3.212-3.217 3.215 3.215 0 0 0-3.213 3.217 3.215 3.215 0 0 0 3.213 3.217" />
@@ -65,7 +66,7 @@ const SvgIlluSpotOpenSimple = (props: SVGProps<SVGSVGElement>) => (
       </g>
     </g>
     <defs>
-      <clipPath id="a">
+      <clipPath id="clip0_66_3971">
         <path fill="#fff" d="M0 0h200v140H0z" />
       </clipPath>
     </defs>

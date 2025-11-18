@@ -5,9 +5,10 @@ const SvgIlluSpotCanVoteV2 = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 200 140"
+    aria-hidden={true}
     {...props}
   >
-    <g id="illu_spot_can-vote-v2/Default" clipPath="url(#a)">
+    <g id="illu_spot_can-vote-v2/Default" clipPath="url(#clip0_70_4731)">
       <g id="illu_spot_can-vote-v2">
         <g id="backgrpund" fill="#2BF5BA">
           <path d="M177.505 26.35c-6.16-.085-10.755-4.255-10.27-9.31s5.875-9.08 12.035-8.995 10.755 4.255 10.27 9.31-5.875 9.08-12.035 8.995M189.575 57.125a6.38 6.38 0 1 0 0-12.76 6.38 6.38 0 0 0 0 12.76M191.21 35.42a2.535 2.535 0 1 0 0-5.07 2.535 2.535 0 0 0 0 5.07M18.16 18.39c-.725 1.41-2.56 2.02-4.1 1.36s-2.205-2.335-1.48-3.745 2.56-2.02 4.1-1.36 2.205 2.335 1.48 3.745M46.27 128.62C5.88 111.44-8.175 73.915 11.81 39.925 37.565-3.88 69.835-1.03 105.16 10.4c31.38 10.155 60.85 2.005 61.24 34.35.435 36.15 21.115 14.65 22.295 49.755.635 18.91-11.69 28.69-42.275 31.28-60.145 5.095-77.64 12.405-100.15 2.835" />
@@ -74,7 +75,7 @@ const SvgIlluSpotCanVoteV2 = (props: SVGProps<SVGSVGElement>) => (
       </g>
     </g>
     <defs>
-      <clipPath id="a">
+      <clipPath id="clip0_70_4731">
         <path fill="#fff" d="M0 0h200v140H0z" />
       </clipPath>
     </defs>

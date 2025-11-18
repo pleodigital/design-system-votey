@@ -7,11 +7,12 @@ const SvgIlluSpotAnswerMethodOpenEndedQuestions = (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 200 140"
+    aria-hidden={true}
     {...props}
   >
     <g
       id="illu_spot_answer-method-open-ended-questions/Default"
-      clipPath="url(#a)"
+      clipPath="url(#clip0_70_4911)"
     >
       <g id="illu_spot_answer-method-open-ended-questions">
         <g id="background" fill="#2BF5BA">
@@ -94,7 +95,7 @@ const SvgIlluSpotAnswerMethodOpenEndedQuestions = (
       </g>
     </g>
     <defs>
-      <clipPath id="a">
+      <clipPath id="clip0_70_4911">
         <path fill="#fff" d="M0 0h200v140H0z" />
       </clipPath>
     </defs>

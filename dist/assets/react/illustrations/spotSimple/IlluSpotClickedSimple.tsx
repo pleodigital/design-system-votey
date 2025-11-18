@@ -5,9 +5,10 @@ const SvgIlluSpotClickedSimple = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 200 140"
+    aria-hidden={true}
     {...props}
   >
-    <g id="illu_spot_clicked_simple/Default" clipPath="url(#a)">
+    <g id="illu_spot_clicked_simple/Default" clipPath="url(#clip0_66_3981)">
       <g id="illu_spot_clicked_simple">
         <g id="background" fill="#2BF5BA">
           <path d="M15.319 26.37c4.877 0 8.831-3.937 8.831-8.792s-3.954-8.792-8.831-8.792c-4.878 0-8.832 3.936-8.832 8.792s3.954 8.792 8.832 8.792M188.062 33.308c3.01 0 5.45-2.43 5.45-5.426s-2.44-5.426-5.45-5.426c-3.009 0-5.45 2.43-5.45 5.426s2.441 5.425 5.45 5.425M186.787 17.192a3.23 3.23 0 0 0 3.238-3.223 3.23 3.23 0 0 0-3.238-3.223 3.23 3.23 0 0 0-3.237 3.223 3.23 3.23 0 0 0 3.237 3.223M42.494 119.386C10.38 98.28 6.95 62.571 16.73 41.795c18.038-38.31 50.344-24.846 87.35-31.161 48.469-8.276 64.269 19.133 80.244 54.45 8.375 18.518 3.619 44.564-37.813 60.144-30.318 11.406-87.718 4.872-104.018-5.842" />
@@ -30,7 +31,7 @@ const SvgIlluSpotClickedSimple = (props: SVGProps<SVGSVGElement>) => (
       </g>
     </g>
     <defs>
-      <clipPath id="a">
+      <clipPath id="clip0_66_3981">
         <path fill="#fff" d="M0 0h200v140H0z" />
       </clipPath>
     </defs>

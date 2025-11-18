@@ -5,9 +5,13 @@ const SvgIlluSpotAutomaticVotingStart = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 200 140"
+    aria-hidden={true}
     {...props}
   >
-    <g id="illu_spot_automatic-voting-start/Default" clipPath="url(#a)">
+    <g
+      id="illu_spot_automatic-voting-start/Default"
+      clipPath="url(#clip0_77_157)"
+    >
       <g id="illu_spot_automatic-voting-start">
         <g id="background" fill="#2BF5BA">
           <path d="M61.27 8.095C21.745 3.85-5.245 6.82 9.625 66.205c5.605 22.395 26.76 76.38 88.035 55.355 54.39-18.665 62.835 16.405 70.435-12.935 12.52-48.355 25.685-33.92 26.415-67.44.45-20.84-14.745-40.56-42.85-30.965-55.095 18.82-42.14 3.06-90.39-2.12zM18.506 120.807c1.566-2.367 1.233-5.346-.743-6.653s-4.848-.448-6.414 1.92-1.233 5.347.743 6.654 4.847.447 6.414-1.921M27.685 121.138c.574-.602.386-1.712-.42-2.48-.805-.768-1.923-.902-2.497-.301-.573.602-.385 1.712.42 2.48.806.768 1.924.903 2.497.301M180.742 132.531c1.105-1.197.514-3.542-1.322-5.238-1.835-1.696-4.219-2.101-5.325-.904-1.106 1.196-.514 3.541 1.321 5.237 1.836 1.697 4.22 2.101 5.326.905" />
@@ -68,7 +72,7 @@ const SvgIlluSpotAutomaticVotingStart = (props: SVGProps<SVGSVGElement>) => (
       </g>
     </g>
     <defs>
-      <clipPath id="a">
+      <clipPath id="clip0_77_157">
         <path fill="#fff" d="M0 0h200v140H0z" />
       </clipPath>
     </defs>

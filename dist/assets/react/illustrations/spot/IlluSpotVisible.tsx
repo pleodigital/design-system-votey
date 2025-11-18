@@ -5,9 +5,10 @@ const SvgIlluSpotVisible = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 200 140"
+    aria-hidden={true}
     {...props}
   >
-    <g id="illu_spot_visible/Default" clipPath="url(#a)">
+    <g id="illu_spot_visible/Default" clipPath="url(#clip0_70_4682)">
       <g id="illu_spot_visible">
         <g id="background" fill="#2BF5BA">
           <path d="M193.445 72.106c4.104-2.593 6.059-6.868 4.366-9.548s-6.393-2.75-10.497-.158-6.059 6.867-4.366 9.547 6.393 2.751 10.497.159" />
@@ -79,7 +80,7 @@ const SvgIlluSpotVisible = (props: SVGProps<SVGSVGElement>) => (
       </g>
     </g>
     <defs>
-      <clipPath id="a">
+      <clipPath id="clip0_70_4682">
         <path fill="#fff" d="M0 0h200v140H0z" />
       </clipPath>
     </defs>

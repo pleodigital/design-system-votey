@@ -5,6 +5,7 @@ const SvgIlluSpotVotingYesNoV2 = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 200 140"
+    aria-hidden={true}
     {...props}
   >
     <g id="illu_spot_voting-yes-no-v2/Default">

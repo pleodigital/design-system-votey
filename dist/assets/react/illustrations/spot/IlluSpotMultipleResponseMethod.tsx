@@ -5,9 +5,13 @@ const SvgIlluSpotMultipleResponseMethod = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 200 140"
+    aria-hidden={true}
     {...props}
   >
-    <g id="illu_spot_multiple-response-method/Default" clipPath="url(#a)">
+    <g
+      id="illu_spot_multiple-response-method/Default"
+      clipPath="url(#clip0_77_325)"
+    >
       <g id="illu_spot_multiple-response-method">
         <g id="background" fill="#2BF5BA">
           <path d="M14.632 78.113c1.198-2.076.008-5.007-2.659-6.546s-5.8-1.105-6.998.97-.008 5.007 2.658 6.547 5.8 1.104 6.999-.971M192.82 130.994c.908-2.494-1.482-5.653-5.338-7.057-3.856-1.403-7.718-.519-8.626 1.974-.907 2.494 1.483 5.653 5.339 7.057 3.856 1.403 7.718.52 8.625-1.974" />
@@ -81,7 +85,7 @@ const SvgIlluSpotMultipleResponseMethod = (props: SVGProps<SVGSVGElement>) => (
       </g>
     </g>
     <defs>
-      <clipPath id="a">
+      <clipPath id="clip0_77_325">
         <path fill="#fff" d="M0 0h200v140H0z" />
       </clipPath>
     </defs>

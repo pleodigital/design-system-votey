@@ -5,9 +5,13 @@ const SvgIlluSpotVotingUneditableV2 = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 200 140"
+    aria-hidden={true}
     {...props}
   >
-    <g id="illu_spot_voting-uneditable-v2/Default" clipPath="url(#a)">
+    <g
+      id="illu_spot_voting-uneditable-v2/Default"
+      clipPath="url(#clip0_70_5194)"
+    >
       <g id="illu_spot_voting-uneditable-v2">
         <g id="background" fill="#2BF5BA">
           <path d="M187.509 125.902c4.104-2.592 6.059-6.867 4.366-9.547s-6.393-2.751-10.497-.159c-4.105 2.593-6.059 6.868-4.366 9.548s6.392 2.751 10.497.158M8.291 14.676c.164-1.546-.739-2.909-2.016-3.044s-2.444 1.008-2.608 2.555c-.164 1.546.739 2.909 2.016 3.044s2.445-1.01 2.608-2.555M17.72 14.615a1.205 1.205 0 1 0 0-2.41 1.205 1.205 0 0 0 0 2.41M170.265 21.86c27.17 21.515 24.27 62.19 16.135 76.42-39.1 68.44-56.28 18.38-122.215 34.355-61.13 14.815-64.15-9.79-51.545-31.865 6.78-11.875-6.655-24.275-6.655-52.695-.005-49.445 123.41-58.58 164.28-26.215M196.923 92.598c.163-1.546-.739-2.909-2.016-3.044s-2.445 1.009-2.608 2.555.739 2.909 2.015 3.044 2.445-1.009 2.609-2.555" />
@@ -89,7 +93,7 @@ const SvgIlluSpotVotingUneditableV2 = (props: SVGProps<SVGSVGElement>) => (
       </g>
     </g>
     <defs>
-      <clipPath id="a">
+      <clipPath id="clip0_70_5194">
         <path fill="#fff" d="M0 0h200v140H0z" />
       </clipPath>
     </defs>

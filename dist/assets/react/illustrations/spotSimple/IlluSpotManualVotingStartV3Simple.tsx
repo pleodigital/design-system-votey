@@ -7,9 +7,13 @@ const SvgIlluSpotManualVotingStartV3Simple = (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 200 140"
+    aria-hidden={true}
     {...props}
   >
-    <g id="illu_spot_manual-voting-start-v3_simple/Default" clipPath="url(#a)">
+    <g
+      id="illu_spot_manual-voting-start-v3_simple/Default"
+      clipPath="url(#clip0_66_4337)"
+    >
       <g id="illu_spot_manual-voting-start-v3_simple">
         <g id="background" fill="#2BF5BA">
           <path d="M181.545 7.74c22.88 8.68 7.825 76.89-13.305 98.805-23.345 24.21-47.385 38.895-121.695 18.98-18.98-5.085-23.965-12.995-18-42.455 6.39-31.565-22.63-42.23-21.815-57.425C8.085.4 55.02 11.13 91.02 13.74c61.69 4.47 65.595-15.46 90.52-6zM198.029 117.433c1.061-2.562-1.174-5.919-4.991-7.499s-7.771-.785-8.831 1.776c-1.061 2.562 1.174 5.92 4.991 7.5s7.771.785 8.831-1.777" />
@@ -119,7 +123,7 @@ const SvgIlluSpotManualVotingStartV3Simple = (
       </g>
     </g>
     <defs>
-      <clipPath id="a">
+      <clipPath id="clip0_66_4337">
         <path fill="#fff" d="M0 0h200v140H0z" />
       </clipPath>
     </defs>

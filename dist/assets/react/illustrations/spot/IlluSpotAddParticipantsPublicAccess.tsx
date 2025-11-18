@@ -7,9 +7,13 @@ const SvgIlluSpotAddParticipantsPublicAccess = (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 200 140"
+    aria-hidden={true}
     {...props}
   >
-    <g id="illu_spot_add-participants-public-access/Default" clipPath="url(#a)">
+    <g
+      id="illu_spot_add-participants-public-access/Default"
+      clipPath="url(#clip0_70_5428)"
+    >
       <g id="illu_spot_add-participants-public-access">
         <g id="background" fill="#2BF5BA">
           <path d="M193.046 13.787c1.292-.966 1.723-2.572.964-3.586-.76-1.015-2.422-1.055-3.713-.089-1.292.966-1.723 2.572-.964 3.587s2.422 1.054 3.713.088M40.108 133.794c1.292-.966 1.723-2.572.964-3.587s-2.422-1.055-3.713-.089c-1.292.967-1.723 2.572-.964 3.587s2.422 1.055 3.713.089" />
@@ -106,7 +110,7 @@ const SvgIlluSpotAddParticipantsPublicAccess = (
       </g>
     </g>
     <defs>
-      <clipPath id="a">
+      <clipPath id="clip0_70_5428">
         <path fill="#fff" d="M0 0h200v140H0z" />
       </clipPath>
     </defs>

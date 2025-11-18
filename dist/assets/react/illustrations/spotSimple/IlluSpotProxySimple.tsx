@@ -5,9 +5,10 @@ const SvgIlluSpotProxySimple = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 200 137"
+    aria-hidden={true}
     {...props}
   >
-    <g id="illu_spot_proxy_simple/Default" clipPath="url(#a)">
+    <g id="illu_spot_proxy_simple/Default" clipPath="url(#clip0_66_4358)">
       <g id="illu_spot_proxy_simple">
         <g id="background" fill="#2BF5BA">
           <path d="M17.172 75.322c1.17-2.031.008-4.9-2.593-6.406s-5.658-1.08-6.827.95c-1.17 2.032-.008 4.9 2.593 6.406 2.601 1.507 5.658 1.081 6.827-.95M191.021 127.078c.885-2.441-1.447-5.532-5.209-6.905s-7.529-.509-8.415 1.931 1.447 5.532 5.209 6.905 7.529.509 8.415-1.931M191.615 107.793c2.025-1.172 2.618-3.946 1.323-6.195s-3.985-3.122-6.01-1.949-2.618 3.947-1.323 6.196 3.985 3.121 6.01 1.948" />
@@ -118,7 +119,7 @@ const SvgIlluSpotProxySimple = (props: SVGProps<SVGSVGElement>) => (
       </g>
     </g>
     <defs>
-      <clipPath id="a">
+      <clipPath id="clip0_66_4358">
         <path fill="#fff" d="M0 0h200v137H0z" />
       </clipPath>
     </defs>

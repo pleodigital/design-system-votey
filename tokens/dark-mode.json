@@ -14,5 +14,27 @@
         "type": "color"
       }
     }
+  },
+  "button": {
+    "primary": {
+      "bg": {
+        "value": "{color.mint-green-100}",
+        "type": "color"
+      },
+      "border": {
+        "value": "{color.navy-blue-800}",
+        "type": "color"
+      }
+    },
+    "secondary": {
+      "bg": {
+        "value": "{color.navy-blue-400}",
+        "type": "color"
+      },
+      "border": {
+        "value": "{color.red-400}",
+        "type": "color"
+      }
+    }
   }
 }

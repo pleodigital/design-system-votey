@@ -83,6 +83,14 @@
     "orange-70": {
       "value": "#ffe7d4",
       "type": "color"
+    },
+    "mint-green-600": {
+      "value": "#02c295",
+      "type": "color"
+    },
+    "navy-blue-600": {
+      "value": "#26256b",
+      "type": "color"
     }
   }
 }

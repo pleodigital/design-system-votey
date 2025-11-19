@@ -1,8 +1,3 @@
-/**
- * Do not edit directly
- * Generated on Wed, 19 Nov 2025 13:44:27 GMT
- */
-
 @theme {
   --color-gray-100: #f6f6f6;
   --color-mint-green-100: #cafdee;
@@ -26,4 +21,10 @@
   --color-orange-70: #ffe7d4;
   --color-mint-green-600: #02c295;
   --color-navy-blue-600: #26256b;
+  --bg-status-main: #939393;
+  --text-heading-banner: #02c295;
+  --button-primary-bg: #2af5ba;
+  --button-primary-border: #26256b;
+  --button-secondary-bg: #7d81bf;
+  --button-secondary-border: #fcd5b5;
 }

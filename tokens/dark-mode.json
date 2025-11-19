@@ -36,5 +36,19 @@
         "type": "color"
       }
     }
+  },
+  "primary": {
+    "mint": {
+      "value": "{color.mint-green-100}",
+      "type": "color"
+    },
+    "navy": {
+      "value": "{color.navy-blue-100}",
+      "type": "color"
+    },
+    "gray": {
+      "value": "{color.gray-100}",
+      "type": "color"
+    }
   }
 }

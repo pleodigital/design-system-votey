@@ -1,5 +1,7 @@
 {
   "tokenSetOrder": [
-    "base/colors"
+    "base/colors",
+    "light-mode",
+    "dark-mode"
   ]
 }

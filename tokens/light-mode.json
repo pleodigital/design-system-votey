@@ -1,0 +1,18 @@
+{
+  "bg": {
+    "status": {
+      "main": {
+        "value": "{color.gray-700}",
+        "type": "color"
+      }
+    }
+  },
+  "text": {
+    "heading": {
+      "banner": {
+        "value": "{color.mint-green-600}",
+        "type": "color"
+      }
+    }
+  }
+}

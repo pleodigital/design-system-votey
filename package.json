@@ -7,7 +7,7 @@
     "dist"
   ],
   "scripts": {
-    "build:tokens": "style-dictionary build --config style-dictionary.config.js",
+    "build:tokens": "node build-style-dictionary.js",
     "transform:icons": "npx @svgr/cli assets/icons --out-dir dist/assets/react/icons --jsx-runtime classic --typescript --config-file .svgrrc-icons.json",
     "transform:illustrations": "npx @svgr/cli assets/illustrations --out-dir dist/assets/react/illustrations --jsx-runtime classic --typescript --config-file .svgrrc-illustrations.json",
     "copy:angular-svg": "cpx \"assets/{icons,illustrations}/**/*.svg\" dist/assets/angular/svg-raw",

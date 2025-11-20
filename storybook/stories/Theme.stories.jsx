@@ -64,7 +64,7 @@ const Item = ({ title='', data={} }) => {
     return (
         <div style={rowWrapperStyle}>
             <Title>{title}</Title>
-            <ColorSwatch token={finalColor} />
+            <ColorSwatch fullName token={finalColor} />
         </div>
     );
 };

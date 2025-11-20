@@ -48,7 +48,7 @@ function grabColor(str=''){
     const token = parts[1] || '';
     return [token, { ...colors.color[token], name: token }];
 }
-const Item = ({ data={} }) => {
+const Item = ({ title='', data={} }) => {
     const { value } = data;
     const [token, color] = grabColor(value);
 
@@ -59,13 +59,16 @@ const Item = ({ data={} }) => {
     }).filter((item) => Boolean(item));
 
     return (
-        <ColorSwatch token={finalColor} fullName />
+        <div style={rowWrapperStyle}>
+            <p style={rowTitleStyle}>{title}</p>
+            <ColorSwatch token={finalColor} />
+        </div>
     );
 };
 
 //watchout! recursion
 const RecursiveRow = ({ title='Row', data=[]}) => {
-    if(Boolean(data?.type) && data.type === 'color') return <Item data={data}/>
+    if(Boolean(data?.type) && data.type === 'color') return <Item title={title} data={data}/>
     const src = Object.entries(data)
     return (
         <React.Fragment key={title}>

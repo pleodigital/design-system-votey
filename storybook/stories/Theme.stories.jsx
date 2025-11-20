@@ -16,8 +16,9 @@ const mainWrapperStyle = {
     flexDirection: 'column',
     justifyContent: 'center',
     maxWidth: '100%',
+    padding: '20px 10px',
     gap: 10,
-
+    transition: 'background-color 0.3s ease',
 };
 
 const rowWrapperStyle = {
@@ -32,6 +33,8 @@ const titleStyle = {
     fontSize: '18px',
     margin: 'unset',
     fontWeight: 'bold',
+    color: 'var(--title-color)',
+    transition: 'color 0.3s ease',
 };
 
 const rowStyle = {
@@ -92,7 +95,7 @@ export const Theme =({ theme='light' })=>{
     const tokens = theme === 'light' ? lightTokens : darkTokens;
     const src = Object.entries({ ...tokens })
     return (
-        <div style={mainWrapperStyle}>
+        <div style={{ ...mainWrapperStyle, backgroundColor: theme === 'light' ? '#fff' : '#1D1D1E', '--title-color': theme === 'light' ? '#000' : '#fff'}}>
             {src.map(([key, value]) => (
                 <React.Fragment key={key}>
                     <RecursiveRow key={key} title={key} data={value} />

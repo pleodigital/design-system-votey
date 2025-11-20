@@ -28,7 +28,7 @@ const rowWrapperStyle = {
     gap: 10,
 };
 
-const rowTitleStyle = {
+const titleStyle = {
     fontSize: '18px',
     margin: 'unset',
     fontWeight: 'bold',
@@ -48,6 +48,9 @@ function grabColor(str=''){
     const token = parts[1] || '';
     return [token, { ...colors.color[token], name: token }];
 }
+
+const Title = ({ children }) => <p style={titleStyle}>{children}</p>
+
 const Item = ({ title='', data={} }) => {
     const { value } = data;
     const [token, color] = grabColor(value);
@@ -60,8 +63,8 @@ const Item = ({ title='', data={} }) => {
 
     return (
         <div style={rowWrapperStyle}>
-            <p style={rowTitleStyle}>{title}</p>
-            <ColorSwatch token={finalColor} />
+            <Title>{title}</Title>
+            <ColorSwatch fullName token={finalColor} />
         </div>
     );
 };
@@ -73,7 +76,7 @@ const RecursiveRow = ({ title='Row', data=[]}) => {
     return (
         <React.Fragment key={title}>
             <div style={rowWrapperStyle}>
-                <p style={rowTitleStyle}>{title}</p>
+                <Title>{title}</Title>
                 <div style={rowStyle}>
                     {src.map(([key, value]) => (
                         <RecursiveRow key={key} title={key} data={value} />

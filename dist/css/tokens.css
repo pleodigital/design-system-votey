@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 19 Nov 2025 13:44:27 GMT
+ * Generated on Fri, 21 Nov 2025 16:33:54 GMT
  */
 
 @theme {
@@ -26,4 +26,9 @@
   --color-orange-70: #ffe7d4;
   --color-mint-green-600: #02c295;
   --color-navy-blue-600: #26256b;
+  --color-mint-green-1300: #1e795f;
+  --color-mint-green-1200: #1b5846;
+  --color-mint-green-1400: #22a680;
+  --color-mint-green-1500: #27d3a1;
+  --color-mint-green-1700: #78f3c8;
 }

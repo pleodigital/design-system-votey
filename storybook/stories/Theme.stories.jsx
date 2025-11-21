@@ -1,8 +1,8 @@
 import React from 'react';
 import {ColorSwatch} from '../components/ColorSwatch';
 import colors from '../../tokens/base/colors.json';
-import darkTokens from '../../tokens/dark-mode.json';
-import lightTokens from '../../tokens/light-mode.json';
+import darkTokens from '../../tokens/dark.json';
+import lightTokens from '../../tokens/light.json';
 import {createShade, mapTokens} from "../utils";
 
 

@@ -2,14 +2,16 @@
   {
     "id": "base/colors-base/colors",
     "name": "base/colors",
-    "group": "base/colors",
-    "selectedTokenSets": {},
+    "selectedTokenSets": {
+      "base/colors": "enabled"
+    },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "test-mint-green-100": "e8d7c066abf500a0cf78b579f3b04c0f30107b8f",
       "test-mint-green-70": "3d9dd22bb02107bdc37d266d9e1ce6ca5d6cfb35"
     },
     "$figmaModeId": "225:0",
-    "$figmaCollectionId": "VariableCollectionId:225:2"
+    "$figmaCollectionId": "VariableCollectionId:225:2",
+    "group": "base/colors"
   }
 ]

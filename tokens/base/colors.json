@@ -91,6 +91,10 @@
     "navy-blue-600": {
       "value": "#26256b",
       "type": "color"
+    },
+    "mint-green-1300": {
+      "value": "#1E795F",
+      "type": "color"
     }
   }
 }

@@ -3,13 +3,8 @@ import {ColorSwatch} from '../components/ColorSwatch';
 import colors from '../../tokens/base/colors.json';
 import darkTokens from '../../tokens/dark.json';
 import lightTokens from '../../tokens/light.json';
-import {createShade, mapTokens} from "../utils";
+import {ALL_SHADES, createShade, mapTokens} from "../utils";
 
-
-const ALL_SHADES = [
-    '25', '50', '70', '100', '200', '300',
-    '400', '500', '600', '700', '800', '900'
-];
 
 const mainWrapperStyle = {
     display: 'flex',

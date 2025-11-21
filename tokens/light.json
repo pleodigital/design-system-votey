@@ -3,6 +3,28 @@
     "accent": {
       "value": "{color.mint-green-400}",
       "type": "color"
+    },
+    "text": {
+      "value": "{color.navy-blue-800}",
+      "type": "color"
+    },
+    "background": {
+      "value": "{color.gray-100}",
+      "type": "color"
+    },
+    "overlay": {
+      "primary": {
+        "value": "{color.gray-100}",
+        "type": "color"
+      },
+      "secondary": {
+        "value": "{color.mint-green-400}",
+        "type": "color"
+      },
+      "tertiary": {
+        "value": "{color.navy-blue-50}",
+        "type": "color"
+      }
     }
   }
 }

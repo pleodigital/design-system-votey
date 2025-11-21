@@ -3,13 +3,8 @@ import {ColorSwatch} from '../components/ColorSwatch';
 import colors from '../../tokens/base/colors.json';
 import darkTokens from '../../tokens/dark.json';
 import lightTokens from '../../tokens/light.json';
-import {createShade, mapTokens} from "../utils";
+import {ALL_SHADES, createShade, mapTokens} from "../utils";
 
-
-const ALL_SHADES = [
-    '25', '50', '70', '100', '200', '300',
-    '400', '500', '600', '700', '800', '900'
-];
 
 const mainWrapperStyle = {
     display: 'flex',
@@ -58,11 +53,17 @@ const Item = ({ title='', data={} }) => {
     const { value } = data;
     const [token, color] = grabColor(value);
 
+
+
     //szpont
     const mappedColors = mapTokens([color]);
     const [finalColor] = ALL_SHADES.map(shade => {
         return createShade(mappedColors, token, shade, false);
-    }).filter((item) => Boolean(item));
+    }).filter((item) => {
+        return Boolean(item)
+    });
+
+    if(!finalColor) return null
 
     return (
         <div style={rowWrapperStyle}>

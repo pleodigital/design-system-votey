@@ -68,8 +68,8 @@ const sdBase = StyleDictionary.extend({
 });
 
 const themes = [
-    {name: 'light', source: ['light-mode.json'], selector: '@theme'},
-    {name: 'dark', source: ['dark-mode.json'], selector: '.dark'},
+    {name: 'light', source: ['light.json'], selector: '@theme'},
+    {name: 'dark', source: ['dark.json'], selector: '.dark'},
 ];
 
 themes.forEach(theme => {

@@ -53,11 +53,17 @@ const Item = ({ title='', data={} }) => {
     const { value } = data;
     const [token, color] = grabColor(value);
 
+
+
     //szpont
     const mappedColors = mapTokens([color]);
     const [finalColor] = ALL_SHADES.map(shade => {
         return createShade(mappedColors, token, shade, false);
-    }).filter((item) => Boolean(item));
+    }).filter((item) => {
+        return Boolean(item)
+    });
+
+    if(!finalColor) return null
 
     return (
         <div style={rowWrapperStyle}>
